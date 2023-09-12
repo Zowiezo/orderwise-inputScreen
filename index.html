@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="feedback-container">
+      <p>Please give your feedback below</p>
+      <p class="remove-prompt">Click X to remove the current line</p>
+      <p class="new-line-instruction">New line if you need more space</p>
+      <p>Your review must be at least 50 characters, but no more than 1000 characters.</p>
+      <div class="input-boxes">
+        <div class="input-box">
+          <label for="input-1">New Line 1:</label>
+          <input type="text" id="input-1" class="feedback-input" maxlength="40">
+          <button class="new-line-btn">New Line</button>
+          <button class="remove-btn">X</button>
+      </div>
+    <div class="bottom-textbox">
+      <textarea id="bottom-text" readonly></textarea>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
